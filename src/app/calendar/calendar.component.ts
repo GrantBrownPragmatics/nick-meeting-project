@@ -26,8 +26,7 @@ export class CalendarComponent implements OnInit {
       calendarCube.appendChild(title);
       element.appendChild(calendarCube);
 
-      let i;
-      for (i = 0; i < meeting.employees.length; i++) {
+      for (let i = 0; i < meeting.employees.length; i++) {
         console.log(meeting.employees[i] + i);
         let employeeName = document.createTextNode(meeting.employees[i].name);
         calendarCube.appendChild(employeeName);
